@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Home Care Service — Service at your Home</title>
+  <style>
+    :root{--accent:#0ea5a4;--bg:#f7f7f8;--card:#ffffff;--muted:#666}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(90deg,#06283d 0%, #0b7285 100%);color:white;padding:18px 24px}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    nav{display:flex;gap:18px;align-items:center}
+    .brand{font-weight:700;font-size:20px;display:flex;align-items:center;gap:12px}
+    .brand img{height:38px}
+    .navlinks{margin-left:auto;display:flex;gap:12px}
+    .navlinks a{color:rgba(255,255,255,0.95);text-decoration:none;padding:8px 12px;border-radius:8px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:36px 0}
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(10,10,10,0.06)}
+    h1{margin:0 0 8px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:14px}
+    .service{padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfbff);text-align:center}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    footer{padding:24px 0;color:#333}
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:#25D366;color:white;border-radius:999px;padding:14px 16px;display:flex;gap:10px;align-items:center;box-shadow:0 10px 30px rgba(37,211,102,0.18);text-decoration:none}
+    .whatsapp img{width:22px;height:22px}
+    .contact-form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e6e9;font-size:14px}
+    button.btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+    @media(max-width:880px){.hero{grid-template-columns:1fr}.navlinks{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand"><img src="images/logo.png" alt="logo">The Home Care Service</div>
+      <nav class="navlinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div>
+        <div class="card">
+          <h1>Service at your home — Repairs & Sales</h1>
+          <p class="lead">Electrician, AC, Refrigerator, RO, Fridge, Paint work, Taxi & ticket booking — all in one place. Fast, trusted technicians.</p>
+          <ul>
+            <li>Trained technicians</li>
+            <li>Genuine spare parts</li>
+            <li>Transparent pricing</li>
+          </ul>
+          <div style="margin-top:12px;display:flex;gap:10px">
+            <a class="btn" href="#contact">Book Service</a>
+            <a style="padding:10px;border-radius:8px;background:#f1f1f1;text-decoration:none;color:#111" href="#services">Our Services</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <strong>Quick Contact</strong>
+          <p style="margin:6px 0;color:var(--muted)">Call / WhatsApp: <span id="phone-number">+91-7347323627</span></p>
+          <p style="margin:6px 0;color:var(--muted)">Working: 9:00 AM — 8:00 PM</p>
+          <img src="images/home-page.jpg" alt="technician" style="width:100%;border-radius:8px;margin-top:8px">
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service card"><strong>AC Repair & Service</strong><p class="lead">Installation, Gas fill, Cooling issues</p></div>
+        <div class="service card"><strong>Refrigerator Repair</strong><p class="lead">Compressor, Gas, Cooling</p></div>
+        <div class="service card"><strong>RO & Water Purifier</strong><p class="lead">Service & free checkup</p></div>
+        <div class="service card"><strong>Electrician</strong><p class="lead">Wiring, Switches, Lights</p></div>
+        <div class="service card"><strong>Paint Work</strong><p class="lead">Interior & exterior</p></div>
+        <div class="service card"><strong>Tickets & Taxi</strong><p class="lead">Air & Train tickets, Local taxi</p></div>
+      </div>
+    </section>
+
+    <section id="gallery" style="margin-top:18px">
+      <h2>Gallery</h2>
+      <div class="gallery card" id="gallery-grid">
+        <img src="images/electrician.jpg" alt="gallery1">
+        <img src="images/home-appliances.png" alt="gallery2">
+        <img src="images/water-purifier-services.png" alt="gallery3">
+        <img src="images/customer-satisfaction.jpg" alt="gallery4">
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:18px">
+      <h2>About Us</h2>
+      <div class="card">
+        <p>The Home Care Service provides trustworthy home appliance repair & sales. Our technicians are trained and continuously evaluated for quality and customer satisfaction.</p>
+        <p><strong>Why choose us?</strong></p>
+        <ul>
+          <li>Single-window solutions</li>
+          <li>Affordable pricing</li>
+          <li>Quality parts & warranty</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <h2>Contact</h2>
+      <div class="card">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <input id="name" placeholder="Your name" required>
+          <input id="phone" placeholder="Phone number" required>
+          <select id="service">
+            <option>AC Repair</option>
+            <option>Refrigerator</option>
+            <option>RO / Water Purifier</option>
+            <option>Electrician</option>
+            <option>Paint Work</option>
+            <option>Tickets / Taxi</option>
+          </select>
+          <textarea id="message" rows="4" placeholder="Describe the issue"></textarea>
+          <button class="btn" type="submit">Send Request</button>
+        </form>
+        <p id="form-result" style="color:green;display:none;margin-top:10px">Thanks — we will contact you soon.</p>
+      </div>
+    </section>
+
+    <footer style="margin-top:18px">
+      <div class="card">
+        <p>&copy; <span id="year"></span> The Home Care Service — All rights reserved.</p>
+        <p><strong>Address:</strong> 18 Hermitage Centralis Market, VIP Road, Zirakpur 140603</p>
+      </div>
+    </footer>
+  </main>
+
+  <a id="whatsapp-btn" class="whatsapp" href="https://wa.me/917347323627?text=Hello%20The%20Home%20Care%20Service%20-%20I%20need%20service" target="_blank">
+    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='white' d='M20.52 3.48A11.95 11.95 0 0012 0C5.373 0 .01 5.373.01 12 0 14.072.54 16.03 1.56 17.72L0 24l6.4-1.68A11.94 11.94 0 0012 24C18.627 24 24 18.627 24 12c0-1.91-.45-3.71-1.27-5.32zM12 21.75a9.75 9.75 0 01-5.26-1.46l-.38-.25L4 21l1.45-2.36-.26-.38A9.75 9.75 0 1121.75 12 9.77 9.77 0 0112 21.75z'/></svg>" alt="wa">
+    <span>WhatsApp</span>
+  </a>
+
+  <script>
+    document.getElementById('phone-number').textContent = '+91-7347323627';
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const phone=document.getElementById('phone').value;
+      const service=document.getElementById('service').value;
+      const message=document.getElementById('message').value;
+      console.log({{name,phone,service,message}});
+      document.getElementById('form-result').style.display='block';
+      setTimeout(()=>{document.getElementById('form-result').style.display='none';},4000);
+    }
+  </script>
+</body>
+</html>
